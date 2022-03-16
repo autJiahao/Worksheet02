@@ -12,7 +12,7 @@ server.get('/api/articles', (req,res) => {
 
 server.get('/api/articles/:id', (req,res) => {
     const article = articles.find((n) => n._id === req.params.id);
-    res.send(articles);
+    res.send(article);
     console.log(req.params);
 });
 
